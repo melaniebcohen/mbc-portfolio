@@ -13,30 +13,25 @@ const styles = {
   gridList: {
     width: 500,
     height: 450,
-    overflowY: 'auto',
   },
 };
 
 const projectData = [
   {
-    img: 'https://cdn.shopify.com/s/files/1/0636/4349/products/star-wars_po-zu_porg-sneakers.jpg?v=1516741710',
-    title: 'Job ff',
-    author: 'boo',
-  },
-  {
-    img: 'https://cdn.shopify.com/s/files/1/0636/4349/products/star-wars_po-zu_porg-sneakers.jpg?v=1516741710',
-    title: 'Job tt',
-    author: 'boo',
-  },
-  {
-    img: 'https://cdn.shopify.com/s/files/1/0636/4349/products/star-wars_po-zu_porg-sneakers.jpg?v=1516741710',
-    title: 'Job ww',
-    author: 'boo',
-  },
-  {
-    img: 'https://cdn.shopify.com/s/files/1/0636/4349/products/star-wars_po-zu_porg-sneakers.jpg?v=1516741710',
+    img: './../../assets/projects/jobseeker.png',
     title: 'Job Seeker',
-    author: 'boo',
+    // author: 'boo',
+    featured: true,
+  },
+  {
+    img: 'https://cdn.shopify.com/s/files/1/0636/4349/products/star-wars_po-zu_porg-sneakers.jpg?v=1516741710',
+    title: 'RoverView',
+    // author: 'boo',
+  },
+  {
+    img: 'https://cdn.shopify.com/s/files/1/0636/4349/products/star-wars_po-zu_porg-sneakers.jpg?v=1516741710',
+    title: 'Take A Hike',
+    // author: 'boo',
   },
 ];
 
@@ -45,17 +40,22 @@ export default class ProjectGrid extends Component {
     return (
       <div style={styles.root}>
         <GridList
-          cellHeight={180}
+          cols={2}
+          cellHeight={200}
+          padding={1}
           style={styles.gridList}>
           {projectData.map(project => (
             <GridTile
-              titlePosition='top'
-              titleBackground={'rgba(0, 0, 0, 0.0)'}
-              titleStyle={{ color: 'black' }}
+              style={{ borderRadius: 4 }}
               key={project.title}
               title={project.title}
-              subtitle={project.author}>
-              <img src={project.img} />
+              // subtitle={project.author}
+              // onClick={() => console.log('boo')}
+              titlePosition='top'
+              titleBackground='linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)'
+              cols={project.featured ? 2 : 1}
+              rows={project.featured ? 2 : 1}>
+              <img src={project.img} className='project' />
             </GridTile>
           ))}
         </GridList>

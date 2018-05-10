@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import AppBar from 'material-ui/AppBar';
-import { blue100 } from 'material-ui/styles/colors';
+import FlatButton from 'material-ui/FlatButton';
 
 export default class NavBar extends Component {
   render() {
@@ -8,8 +8,9 @@ export default class NavBar extends Component {
       <Fragment>
         <AppBar 
           title='mbc portfolio' 
+          titleStyle={{ textAlign: 'center' }}
           zDepth={0}
-          style={{ background: blue100 }}
+          showMenuIconButton={false}
         />
       </Fragment>
     );
