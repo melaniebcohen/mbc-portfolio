@@ -7,7 +7,7 @@ import muiTheme from './style/mui-theme.js';
 
 import './style/main.scss';
 
-import HomeView from './components/home-view/index.js';
+import HomeView from './components/home/index.js';
 
 const App = () => {
   return (

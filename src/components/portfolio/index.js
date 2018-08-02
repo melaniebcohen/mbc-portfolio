@@ -35,7 +35,7 @@ const projectData = [
   },
 ];
 
-export default class ProjectGrid extends Component {
+export default class Portfolio extends Component {
   render() {
     return (
       <div style={styles.root}>
