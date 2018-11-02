@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { FiHome, FiUser, FiBriefcase, FiMessageSquare } from 'react-icons/fi';
-import './_navbar-style.scss';
+import './_navbar.scss';
 
 export default class NavBar extends Component {
   render() {
     return <section className='navbar'>
       <ul>
-        <li>
+        {/* <li>
           <FiHome className='icon' />
           <p className='icon-text'>Home</p>
-        </li>
+        </li> */}
         <li>
           <FiUser className='icon' />
           <p className='icon-text'>About</p>

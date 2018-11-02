@@ -3,7 +3,10 @@ import './_header.scss';
 
 const Header = () => {
   return <section className='header'>
-    <h1>Melanie Cohen</h1>
+    <div>
+      <h1>Melanie Cohen</h1>
+      <h2>Front-End Developer</h2>
+    </div>
   </section>;
 };
 

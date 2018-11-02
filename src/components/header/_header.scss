@@ -1,9 +1,22 @@
 .header {
   display: flex;
   justify-content: center;
-  
-  h1 {
-    font-size: 1.75em;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 20px 0 10px 0;
+    align-items: center;
+
+    h1 {
+      font-size: 1.75em;
+    }
+
+    h2 {
+      font-size: 1.05em;
+      padding: 5px 0 5px 0;
+    }
   }
+
 }
