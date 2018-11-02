@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-import NavBar from './../navbar';
+import NavBar from '../navbar';
 import Portfolio from '../portfolio/Portfolio';
 import About from '../about/About';
 import Contact from '../contact/Contact';

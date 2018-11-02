@@ -1,4 +1,6 @@
 .portfolio {
-  border: 1px orange dashed;
-  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
 }

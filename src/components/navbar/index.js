@@ -3,13 +3,14 @@ import { FiHome, FiUser, FiBriefcase, FiMessageSquare } from 'react-icons/fi';
 import './_navbar.scss';
 
 export default class NavBar extends Component {
+  constructor(props) {
+    super(props);
+    this.aboutRef = React.createRef();
+  }
+  
   render() {
     return <section className='navbar'>
       <ul>
-        {/* <li>
-          <FiHome className='icon' />
-          <p className='icon-text'>Home</p>
-        </li> */}
         <li>
           <FiUser className='icon' />
           <p className='icon-text'>About</p>
