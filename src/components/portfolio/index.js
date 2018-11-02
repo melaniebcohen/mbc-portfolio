@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { GridList, GridTile } from 'material-ui/GridList';
+// import { GridList, GridTile } from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
@@ -39,7 +39,7 @@ export default class Portfolio extends Component {
   render() {
     return (
       <div style={styles.root}>
-        <GridList
+        {/* <GridList
           cols={2}
           cellHeight={200}
           padding={1}
@@ -58,7 +58,7 @@ export default class Portfolio extends Component {
               <img src={project.img} className='project' />
             </GridTile>
           ))}
-        </GridList>
+        </GridList> */}
       </div>
     );
   }
