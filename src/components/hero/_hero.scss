@@ -1,7 +1,12 @@
 .hero {
-  // border: 1px orange dashed;
-  background-image: url(./../../../assets/spl.jpg);
+  background: #ffffff;
   height: 300px;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1),
+  ),url(/../../../assets/spl.jpg);
+
   background-position: center;
   background-size: cover;
   display: flex;
