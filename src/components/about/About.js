@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import './_about.scss';
 
 const About = () => {
-  return <section className='about'>
+  return <section className='about' id='aboutContainer'>
     <h3>About</h3>
     <section>
       <div id='about-col-1'>

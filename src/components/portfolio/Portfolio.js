@@ -19,8 +19,10 @@ const projectData = [
 const Portfolio = () => {
   return <section className='portfolio'>
     <h3>Portfolio</h3>
-    <div>
-      
+    <div className='portfolio-container'>
+      <div className='portfolio-frame'></div>
+      <div className='portfolio-frame'></div>
+      <div className='portfolio-frame'></div>
     </div>
   </section>;
 };
