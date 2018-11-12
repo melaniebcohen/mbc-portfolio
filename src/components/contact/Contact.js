@@ -4,7 +4,7 @@ import './_contact.scss';
 
 const Contact = () => {
   return <section className='contact'>
-    <h2>Contact</h2>
+    <h3>Contact</h3>
     <div>
       <div>
         <FiLinkedin />
