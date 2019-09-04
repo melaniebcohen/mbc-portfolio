@@ -9,8 +9,8 @@ import Header from '../header/Header';
 
 const Home = () => {
   return <Fragment>
-    <Header />
-    <NavBar />
+    {/* <Header /> */}
+    {/* <NavBar /> */}
     <Hero />
     <About />
     <Portfolio />
