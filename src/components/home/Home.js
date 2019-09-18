@@ -1,19 +1,17 @@
 import React, { Fragment } from 'react';
 
-import NavBar from '../navbar';
+import Nav from '../nav/Nav';
 import Portfolio from '../portfolio/Portfolio';
 import About from '../about/About';
 import Contact from '../contact/Contact';
-import Hero from '../hero/Hero';
-import Header from '../header/Header';
+import Resume from '../resume/Resume';
 
 const Home = () => {
   return <Fragment>
-    {/* <Header /> */}
-    {/* <NavBar /> */}
-    <Hero />
+    <Nav />
     <About />
-    <Portfolio />
+    {/* <Portfolio /> */}
+    <Resume />
     <Contact />
   </Fragment>;
 };

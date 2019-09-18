@@ -3,7 +3,6 @@ import './_about.scss';
 
 const About = () => {
   return <section className='about' id='aboutContainer'>
-    <h3>About</h3>
     <section>
       <div id='about-col-1'>
         <img src='../../../assets/mbc.jpg' />

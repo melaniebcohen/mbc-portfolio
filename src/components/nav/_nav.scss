@@ -1,0 +1,41 @@
+.nav {
+  border-top: 5px #3C7596 solid;
+
+  .content {
+    width: 80%;
+    margin: 30px auto;
+
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+    
+    ul {
+      border-top: 1px grey solid;
+      margin-top: 20px;
+      display: flex;
+
+      li {
+        border-top: 3px #FFF solid;
+        padding-top: 5px;
+        margin-left: 15px;
+
+        a {
+          color: black;
+          text-decoration: none;
+        }
+
+        &.active {
+          border-top: 3px #F7A961 solid;
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

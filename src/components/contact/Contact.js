@@ -15,7 +15,6 @@ const Contact = () => {
         <a href='http://github.com/melaniebcohen'>GitHub</a>
       </div>
       <FiMail />
-
     </div>
   </section>;
 };
