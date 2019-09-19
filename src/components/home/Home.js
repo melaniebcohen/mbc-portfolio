@@ -16,21 +16,20 @@ class Home extends Component {
   }
 
   toggleMenu(link) {
-    console.log(link);
-    this.setState = {
-      activeComponent: link,
-    };
+    return this.setState({ activeComponent: link });
   }
 
   render() {
     const { activeComponent } = this.state;
 
-    return <Fragment>
-      <Nav activeComponent={this.state.activeComponent} toggleMenu={this.toggleMenu} />
-      <About activeComponent={this.state.activeComponent} />
-      <Resume activeComponent={activeComponent} />
-      <Contact activeComponent={activeComponent} />
-    </Fragment>;
+    return (
+      <Fragment>
+        <Nav activeComponent={activeComponent} toggleMenu={this.toggleMenu} />
+        <About activeComponent={activeComponent} />
+        <Resume activeComponent={activeComponent} />
+        <Contact activeComponent={activeComponent} />
+      </Fragment>
+    );
   }
 }
 
