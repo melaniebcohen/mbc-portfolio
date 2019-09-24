@@ -1,22 +1,26 @@
-import React, { Component, Fragment } from 'react';
+import React from 'react';
 import { FiLinkedin, FiGithub, FiTwitter, FiMail } from 'react-icons/fi';
 import './_contact.scss';
 
-const Contact = () => {
-  return <section className='contact'>
-    <h3>Contact</h3>
-    <div>
+const Contact = ({ activeComponent }) => {
+  if (activeComponent === 'Contact') {
+    return <section className='contact'>
+      {/* <h3>Contact</h3>
       <div>
-        <FiLinkedin />
-        <a href='https://www.linkedin.com/in/cohenmelanie/'>LinkedIn</a>
-      </div>
-      <div>
-        <FiGithub />
-        <a href='http://github.com/melaniebcohen'>GitHub</a>
-      </div>
-      <FiMail />
-    </div>
-  </section>;
+        <div>
+          <FiLinkedin />
+          <a href='https://www.linkedin.com/in/cohenmelanie/'>LinkedIn</a>
+        </div>
+        <div>
+          <FiGithub />
+          <a href='http://github.com/melaniebcohen'>GitHub</a>
+        </div>
+        <FiMail />
+      </div> */}
+    </section>;
+  } else {
+    return null;
+  }
 };
 
 export default Contact;

@@ -5,6 +5,7 @@ import Portfolio from '../portfolio/Portfolio';
 import About from '../about/About';
 import Contact from '../contact/Contact';
 import Resume from '../resume/Resume';
+import Footer from '../footer/Footer';
 
 class Home extends Component {
   constructor(props) {
@@ -28,6 +29,7 @@ class Home extends Component {
         <About activeComponent={activeComponent} />
         <Resume activeComponent={activeComponent} />
         <Contact activeComponent={activeComponent} />
+        <Footer />
       </Fragment>
     );
   }
