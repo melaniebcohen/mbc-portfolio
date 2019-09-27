@@ -7,7 +7,7 @@ const Resume = ({ activeComponent }) => {
       <h3>Current</h3>
       <div className="item">
         <div className="item-img-container">
-          <img src="../../assets/logos/mc-freelance.png"></img>
+          <img alt="" src="../../assets/logos/mc-freelance.png"></img>
         </div>
         <div className="item-text">
           <h4>Freelance</h4>
@@ -22,7 +22,7 @@ const Resume = ({ activeComponent }) => {
       </div>
       <div className="item">
         <div className="item-img-container">
-          <img src="../../assets/logos/codefellows.png"></img>
+          <img alt="" src="../../assets/logos/codefellows.png"></img>
         </div>
         <div className="item-text">
           <h4>Code Fellows Teaching Assistant</h4>
@@ -39,7 +39,7 @@ const Resume = ({ activeComponent }) => {
       <h3>Previous</h3>
       <div className="item">
         <div className="item-img-container">
-          <img src="../../assets/logos/drift.png"></img>
+          <img alt="" src="../../assets/logos/drift.png"></img>
         </div>
         <div className="item-text">
           <h4>Drift Marketplace</h4>
@@ -54,7 +54,7 @@ const Resume = ({ activeComponent }) => {
       </div>
       <div className="item">
         <div className="item-img-container">
-          <img src="../../assets/logos/csm-pacific.png"></img>
+          <img alt="" src="../../assets/logos/csm-pacific.png"></img>
         </div>
         <div className="item-text">
           <h4>CSM Pacific</h4>
@@ -69,7 +69,7 @@ const Resume = ({ activeComponent }) => {
       </div>
       <div className="item">
         <div className="item-img-container">
-          <img src="../../assets/logos/carena.png"></img>
+          <img alt="" src="../../assets/logos/carena.png"></img>
         </div>
         <div className="item-text">
           <h4>Carena, Inc.</h4>
@@ -84,7 +84,7 @@ const Resume = ({ activeComponent }) => {
       </div>
       <div className="item">
         <div className="item-img-container">
-          <img src="../../assets/logos/apple.png"></img>
+          <img alt="" src="../../assets/logos/apple.png"></img>
         </div>
         <div className="item-text">
           <h4>Apple, Inc.</h4>
