@@ -1,10 +1,23 @@
 .nav {
   border-top: 5px #3C7596 solid;
+  font-family: 'Poppins', sans-serif;
 
   .content {
     width: 80%;
     margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    
+    .content-title {
+      display: flex;
+    }
 
+    img {
+      width: 55px;
+      height: 55px;
+      margin-right: 5px;
+    }
+    
     h1 {
       font-size: 30px;
     }
@@ -14,6 +27,7 @@
     }
     
     ul {
+      font-family: 'Avenir', sans-serif;
       border-top: 1px rgb(133, 133, 133) solid;
       margin-top: 20px;
       display: flex;

@@ -25,9 +25,12 @@ export default class Nav extends Component {
     return (
       <section className="nav">
         <div className="content">
-          <div>
-            <h1>Melanie Cohen</h1>
-            <h2>Front-end Dev</h2>
+          <div class="content-title">
+            <img alt="" src="../../assets/logos/mc-freelance.png"></img>
+            <div className="title">
+              <h1>Melanie Cohen</h1>
+              <h2>Front-End Developer</h2>
+            </div>
           </div>
           <ul>
             {navItems.map((navItem, index) => 
