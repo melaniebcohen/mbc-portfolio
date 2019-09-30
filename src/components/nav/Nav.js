@@ -25,7 +25,7 @@ export default class Nav extends Component {
     return (
       <section className="nav">
         <div className="content">
-          <div class="content-title">
+          <div className="content-title">
             <img alt="" src="../../assets/logos/mc-freelance.png"></img>
             <div className="title">
               <h1>Melanie Cohen</h1>
