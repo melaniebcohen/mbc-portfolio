@@ -1,26 +1,62 @@
-import React from 'react';
-import { FiLinkedin, FiGithub, FiTwitter, FiMail } from 'react-icons/fi';
+import React, { Component } from 'react';
 import './_contact.scss';
 
-const Contact = ({ activeComponent }) => {
-  if (activeComponent === 'Contact') {
-    return <section className='contact'>
-      {/* <h3>Contact</h3>
-      <div>
-        <div>
-          <FiLinkedin />
-          <a href='https://www.linkedin.com/in/cohenmelanie/'>LinkedIn</a>
-        </div>
-        <div>
-          <FiGithub />
-          <a href='http://github.com/melaniebcohen'>GitHub</a>
-        </div>
-        <FiMail />
-      </div> */}
-    </section>;
-  } else {
-    return null;
+export default class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      email: '',
+      message: '',
+    };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
-};
 
-export default Contact;
+  handleChange(e) {
+    this.setState({ [e.target.name]: e.target.value });
+  }
+
+  handleSubmit() {
+
+  }
+
+  render() {
+    if (this.props.activeComponent === 'Contact') {
+      return <section className='contact'>
+        <form onSubmit={this.handleSubmit}>
+          <label>
+            Name:
+            <input 
+              name="name"
+              type="text" 
+              value={this.state.name} 
+              onChange={this.handleChange} />
+          </label>
+
+          <label>
+            Email:
+            <input 
+              name="email"
+              type="text" 
+              value={this.state.email} 
+              onChange={this.handleChange} />
+          </label>
+
+          <label>
+            Message:
+            <textarea 
+              name="message"
+              type="text" 
+              value={this.state.message} 
+              onChange={this.handleChange} />
+          </label>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </section>;
+    } else {
+      return null;
+    }
+  }
+}
