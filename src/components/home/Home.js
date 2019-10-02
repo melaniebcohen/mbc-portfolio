@@ -1,17 +1,16 @@
-import React, { Fragment, Component } from 'react';
+import React, { Fragment, Component } from "react";
 
-import Nav from '../nav/Nav';
-import Portfolio from '../portfolio/Portfolio';
-import About from '../about/About';
-import Contact from '../contact/Contact';
-import Resume from '../resume/Resume';
-import Footer from '../footer/Footer';
+import Nav from "../nav/Nav";
+import About from "../about/About";
+import Contact from "../contact/Contact";
+import Resume from "../resume/Resume";
+import Footer from "../footer/Footer";
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeComponent: 'About',
+      activeComponent: "About",
     };
     this.toggleMenu = this.toggleMenu.bind(this);
   }

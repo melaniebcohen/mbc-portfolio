@@ -1,8 +1,8 @@
-import React from 'react';
-import './_about.scss';
+import React from "react";
+import "./_about.scss";
 
 const About = ({ activeComponent }) => {  
-  if (activeComponent === 'About') {
+  if (activeComponent === "About") {
     return (
       <section className='about'>
         <img src='../../../assets/mbc.jpg' />

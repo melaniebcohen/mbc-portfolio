@@ -1,9 +1,9 @@
-import React from 'react';
-import './_resume.scss';
+import React from "react";
+import "./_resume.scss";
 
 const Resume = ({ activeComponent }) => {
-  if (activeComponent === 'Resume') {
-    return <section className='resume' style={{ paddingBottom: '3rem' }}>
+  if (activeComponent === "Resume") {
+    return <section className='resume' style={{ paddingBottom: "3rem" }}>
       <h3>Current Experience</h3>
       <div className="item">
         <div className="item-img-container">

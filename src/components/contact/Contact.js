@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import './_contact.scss';
+import React, { Component } from "react";
+import "./_contact.scss";
 
 export default class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: '',
-      email: '',
-      message: '',
+      name: "",
+      email: "",
+      message: "",
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -17,12 +17,14 @@ export default class Contact extends Component {
     this.setState({ [e.target.name]: e.target.value });
   }
 
-  handleSubmit() {
-
+  handleSubmit(e) {
+    e.preventDefault();
+    
+    // TODO determine what to do here
   }
 
   render() {
-    if (this.props.activeComponent === 'Contact') {
+    if (this.props.activeComponent === "Contact") {
       return <section className='contact'>
         <form onSubmit={this.handleSubmit}>
           <label>

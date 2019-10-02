@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import './_nav.scss';
+import React, { Component } from "react";
+import "./_nav.scss";
 
 export default class Nav extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeItem: 'About',
-      navItems: ['About', 'Resume', 'Contact'],
+      activeItem: "About",
+      navItems: ["About", "Resume", "Contact"],
     };
   }
 
@@ -34,7 +34,7 @@ export default class Nav extends Component {
           </div>
           <ul>
             {navItems.map((navItem, index) => 
-              <li key={index} className={activeItem === navItem ? 'active' : null}>
+              <li key={index} className={activeItem === navItem ? "active" : null}>
                 <a href="#" onClick={() => toggleMenu(navItem)}>{navItem}</a>
               </li>
             )}
