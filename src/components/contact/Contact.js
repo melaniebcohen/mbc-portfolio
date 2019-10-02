@@ -1,64 +1,27 @@
 import React, { Component } from "react";
+import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 import "./_contact.scss";
 
-export default class Contact extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "",
-      email: "",
-      message: "",
-    };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+const Footer = ({ activeComponent }) => {
+  if (activeComponent === "Contact") {
+    return <section className="contact">
+      <p>Reach out pls</p>
+
+      <div>
+        <a href="https://www.linkedin.com/in/cohenmelanie/" target="_blank" aria-label="LinkedIn - Opens in new tab">
+          <FaLinkedinIn />
+        </a>
+        <a href="http://github.com/melaniebcohen" target="_blank" aria-label="Github - Opens in new tab">
+          <FaGithub />
+        </a>
+        <a href="mailto:melaniebcohen@gmail.com" target="_blank" aria-label="Email - Opens in new tab">
+          <FaEnvelope />
+        </a>
+      </div>
+    </section>;
+  } else {
+    return null;
   }
+};
 
-  handleChange(e) {
-    this.setState({ [e.target.name]: e.target.value });
-  }
-
-  handleSubmit(e) {
-    e.preventDefault();
-    
-    // TODO determine what to do here
-  }
-
-  render() {
-    if (this.props.activeComponent === "Contact") {
-      return <section className='contact'>
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Name:
-            <input 
-              name="name"
-              type="text" 
-              value={this.state.name} 
-              onChange={this.handleChange} />
-          </label>
-
-          <label>
-            Email:
-            <input 
-              name="email"
-              type="text" 
-              value={this.state.email} 
-              onChange={this.handleChange} />
-          </label>
-
-          <label>
-            Message:
-            <textarea 
-              name="message"
-              type="text" 
-              value={this.state.message} 
-              onChange={this.handleChange} />
-          </label>
-
-          <input type="submit" value="Submit" />
-        </form>
-      </section>;
-    } else {
-      return null;
-    }
-  }
-}
+export default Footer;
