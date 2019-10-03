@@ -1,5 +1,7 @@
+@import "../../style/vars";
+
 .about {
-  width: 80%;
+  width: $page-width;
   margin: auto;
   display: flex;
 

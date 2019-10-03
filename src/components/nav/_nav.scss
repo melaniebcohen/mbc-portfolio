@@ -1,9 +1,11 @@
+@import "../../style/vars";
+
 .nav {
   border-top: 5px #3C7596 solid;
   font-family: 'Poppins', sans-serif;
 
   .content {
-    width: 80%;
+    width: $page-width;
     margin: 30px auto;
     display: flex;
     flex-direction: column;

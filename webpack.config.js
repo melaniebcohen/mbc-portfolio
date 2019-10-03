@@ -1,26 +1,26 @@
-'use strict';
+"use strict";
 
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const path = require('path');
+const HTMLWebpackPlugin = require("html-webpack-plugin");
+const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+const path = require("path");
 
-const isHot = path.basename(require.main.filename) === 'webpack-dev-server.js';
+const isHot = path.basename(require.main.filename) === "webpack-dev-server.js";
 
 module.exports = {
   entry: {
-    app: './src/index.js',
+    app: "./src/index.js",
   },
   plugins: [
     new HTMLWebpackPlugin({
-      template: './src/index.html',
-      filename: './index.html',
+      template: "./src/index.html",
+      filename: "./index.html",
     }),
     new MiniCSSExtractPlugin({
-      filename: isHot ? 'css/[name].css' : 'css/[name].[contenthash].css',
-      chunkFilename: 'css/[id].css',   
+      filename: isHot ? "css/[name].css" : "css/[name].[contenthash].css",
+      chunkFilename: "css/[id].css",   
     }),
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(["dist"]),
   ],
   devServer: {
     historyApiFallback: true,
@@ -31,14 +31,14 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
         },
       },
       {
         test: /\.html$/,
         use: [
           {
-            loader: 'html-loader',
+            loader: "html-loader",
             options: { minimize: true },
           },
         ],
@@ -46,24 +46,24 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          'style-loader',
+          "style-loader",
           MiniCSSExtractPlugin.loader, 
-          'css-loader?url=false',
-          'sass-loader',
+          "css-loader?url=false",
+          "sass-loader",
         ],
       },
       {
         test: /\.(png|jpg|gif)$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
               limit: 60000,
-              name: 'image/[name].[ext]',
+              name: "image/[name].[ext]",
             },
           },
         ],
-      }
+      },
     ],
   },
 };
